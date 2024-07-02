@@ -1,0 +1,144 @@
+tee god-of-the-gaps.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>God of the Gaps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>God of the Gaps</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The god of the gaps fallacy occurs when gaps in scientific knowledge are taken as evidence for the existence of God or the supernatural. This fallacy shifts the focus from scientific inquiry to supernatural explanations.</p>
+                    <p>For example, "Science can't explain how life began, so it must have been created by God" is a god of the gaps fallacy because it uses a gap in knowledge as evidence for a supernatural explanation.</p>
+                    <p>Critical thinking involves seeking natural explanations and acknowledging the limits of current knowledge without resorting to supernatural explanations. By doing so, we can avoid the god of the gaps fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="argument-from-ignorance.html">Argument from Ignorance</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/god-of-the-gaps.jpg" alt="God of the Gaps Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "We can't explain the success of our competitor, so it must be luck."</p>
+                    <p><strong>Academic Example:</strong> "The origins of this phenomenon are unknown, so it must be supernatural."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often attribute unexplained events to ghosts or other supernatural forces."</p>
+                    <p><strong>Intimate Partner Example:</strong> "We can't explain why our relationship is struggling, so it must be fate."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

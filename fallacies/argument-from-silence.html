@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Argument from Silence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script src="navigation.js"></script>
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = 'argument-from-silence.html';
+            document.getElementById('previousLink').onclick = function () {
+                getPreviousPage(currentPage);
+            };
+            document.getElementById('nextLink').onclick = function () {
+                getNextPage(currentPage);
+            };
+        });
+    </script>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Argument from Silence</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The argument from silence fallacy occurs when someone concludes that the absence of evidence is evidence of absence. This fallacy shifts the focus from sound reasoning to conclusions drawn from silence or lack of evidence.</p>
+                    <p>For example, "No one has mentioned any complaints about the new policy, so everyone must be happy with it" is an example of an argument from silence because it incorrectly assumes that silence implies consent.</p>
+                    <p>Critical thinking involves evaluating arguments based on evidence and logical reasoning, rather than relying on the absence of evidence. By doing so, we can avoid the argument from silence fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="appeal-to-ignorance.html">Appeal to Ignorance</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/argument-from-silence.jpg" alt="Argument from Silence Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "No one has raised any issues with our new product, so it must be perfect."</p>
+                    <p><strong>Academic Example:</strong> "The professor didn't mention any mistakes in my essay, so it must be flawless."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often use the argument from silence to draw incorrect conclusions."</p>
+                    <p><strong>Intimate Partner Example:</strong> "You haven't said anything about our relationship, so you must be happy with it."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

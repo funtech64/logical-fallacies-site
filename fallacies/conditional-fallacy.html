@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conditional Fallacy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script src="navigation.js"></script>
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = 'conditional-fallacy.html';
+            document.getElementById('previousLink').onclick = function () {
+                getPreviousPage(currentPage);
+            };
+            document.getElementById('nextLink').onclick = function () {
+                getNextPage(currentPage);
+            };
+        });
+    </script>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Conditional Fallacy</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The conditional fallacy occurs when someone assumes a conditional statement is true in all cases without considering exceptions. This fallacy shifts the focus from sound reasoning to unfounded assumptions about conditional relationships.</p>
+                    <p>For example, "If it is raining, then the ground is wet. The ground is wet. Therefore, it must be raining" is an example of a conditional fallacy because it ignores other possible reasons for the ground being wet.</p>
+                    <p>Critical thinking involves evaluating arguments based on evidence and logical reasoning, rather than unfounded assumptions about conditional relationships. By doing so, we can avoid the conditional fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="false-cause.html">False Cause</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/conditional-fallacy.jpg" alt="Conditional Fallacy Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "If we increase our advertising, sales will increase. Sales have increased. Therefore, it must be because of our advertising."</p>
+                    <p><strong>Academic Example:</strong> "If a student studies hard, they will get good grades. This student got good grades. Therefore, they must have studied hard."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often use the conditional fallacy to draw incorrect conclusions."</p>
+                    <p><strong>Intimate Partner Example:</strong> "If you love me, you will call me. You called me. Therefore, you must love me."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

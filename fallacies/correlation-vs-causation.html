@@ -1,0 +1,144 @@
+tee correlation-vs-causation.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Correlation vs. Causation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Correlation vs. Causation</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>Correlation vs. causation occurs when someone assumes that because two things are correlated, one must cause the other. This fallacy shifts the focus from identifying actual causal relationships to assuming that correlation implies causation.</p>
+                    <p>For example, "Ice cream sales and drowning incidents both increase in the summer, so eating ice cream must cause drowning" is a correlation vs. causation fallacy because it assumes a causal relationship without evidence.</p>
+                    <p>Critical thinking involves distinguishing between correlation and causation and seeking evidence of causal relationships. By doing so, we can avoid the correlation vs. causation fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="post-hoc.html">Post Hoc</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/correlation-vs-causation.jpg" alt="Correlation vs. Causation Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "Our sales increase every time we run an ad campaign, so the ads must be causing the sales boost."</p>
+                    <p><strong>Academic Example:</strong> "Students who study longer hours tend to get better grades, so studying longer causes better grades."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often mistake correlation for causation when explaining events."</p>
+                    <p><strong>Intimate Partner Example:</strong> "Every time we argue, it rains. Our arguments must be causing the rain."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

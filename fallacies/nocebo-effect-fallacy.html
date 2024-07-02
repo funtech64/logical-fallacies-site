@@ -1,0 +1,144 @@
+tee nocebo-effect-fallacy.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nocebo Effect Fallacy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Nocebo Effect Fallacy</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The nocebo effect fallacy occurs when negative expectations or beliefs cause an adverse effect, even if there is no direct cause for it. This fallacy shifts the focus from logical reasoning to the power of negative thinking.</p>
+                    <p>For example, "If you believe this medication will harm you, it probably will" is a nocebo effect fallacy because it relies on negative expectations rather than actual evidence of harm.</p>
+                    <p>Critical thinking involves evaluating the evidence and reasoning behind claims, rather than succumbing to negative expectations. By doing so, we can avoid the nocebo effect fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="placebo-effect.html">Placebo Effect</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/nocebo-effect-fallacy.jpg" alt="Nocebo Effect Fallacy Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "Our team will fail this project because everyone believes it's too difficult."</p>
+                    <p><strong>Academic Example:</strong> "Students who think they will do poorly on an exam are more likely to perform poorly."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often experience negative outcomes due to their pessimistic beliefs."</p>
+                    <p><strong>Intimate Partner Example:</strong> "If you think our relationship will fail, it probably will."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

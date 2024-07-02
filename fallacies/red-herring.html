@@ -1,0 +1,144 @@
+tee red-herring.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Red Herring</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .content {
+            display: flex.
+        }
+        .main-content {
+            flex: 3.
+            padding-right: 20px.
+        }
+        .sidebar {
+            flex: 1.
+            border-left: 1px solid #ddd.
+            padding-left: 20px.
+        }
+        .ads {
+            flex: 1.
+            padding-right: 20px.
+        }
+        .footer {
+            background-color: #f8f9fa.
+            padding: 20px 0.
+        }
+        .footer-inner {
+            display: flex.
+            justify-content: space-between.
+            padding: 10px 0.
+            border-top: 1px solid #ddd.
+            text-align: center.
+        }
+        .category-art-container {
+            text-align: center.
+            margin-top: 20px.
+            width: 100%.
+        }
+        .unique-art-container {
+            text-align: right.
+            margin-top: 20px.
+            width: 100%.
+        }
+        .nav-links {
+            display: flex.
+            justify-content: flex-start.
+            margin-top: 20px.
+        }
+        .nav-links a {
+            margin-right: 10px.
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Red Herring</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The red herring fallacy occurs when someone introduces an irrelevant topic into an argument to distract from the original issue. This fallacy shifts the focus from the main argument to a side issue.</p>
+                    <p>For example, "We shouldn't worry about climate change because there's poverty to deal with" is a red herring because it diverts attention from climate change to poverty.</p>
+                    <p>Critical thinking involves staying focused on the main argument and not being distracted by irrelevant issues. By doing so, we can avoid the red herring fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="straw-man.html">Straw Man</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/red-herring.jpg" alt="Red Herring Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "We shouldn't focus on this product defect because our sales are up."</p>
+                    <p><strong>Academic Example:</strong> "We don't need to discuss the errors in the study because the findings are interesting."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In detective stories, characters often use red herrings to mislead others."</p>
+                    <p><strong>Intimate Partner Example:</strong> "We shouldn't discuss our argument because we need to plan our vacation."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

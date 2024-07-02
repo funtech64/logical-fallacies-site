@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Appeal to Ignorance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script src="navigation.js"></script>
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = 'appeal-to-ignorance.html';
+            document.getElementById('previousLink').onclick = function () {
+                getPreviousPage(currentPage);
+            };
+            document.getElementById('nextLink').onclick = function () {
+                getNextPage(currentPage);
+            };
+        });
+    </script>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Appeal to Ignorance</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The appeal to ignorance fallacy occurs when someone argues that a proposition is true because it has not yet been proven false, or vice versa. This fallacy shifts the focus from sound reasoning to the absence of evidence.</p>
+                    <p>For example, "No one has ever proven that aliens do not exist, so they must exist" is an example of an appeal to ignorance because it relies on a lack of evidence rather than positive proof.</p>
+                    <p>Critical thinking involves evaluating arguments based on evidence and logical reasoning, rather than relying on the absence of evidence. By doing so, we can avoid the appeal to ignorance fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="argument-from-silence.html">Argument from Silence</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/appeal-to-ignorance.jpg" alt="Appeal to Ignorance Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "No one has proven that our product does not work, so it must work."</p>
+                    <p><strong>Academic Example:</strong> "There is no evidence against my theory, so it must be correct."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often use the appeal to ignorance to justify their beliefs."</p>
+                    <p><strong>Intimate Partner Example:</strong> "You can't prove that I don't love you, so I must love you."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

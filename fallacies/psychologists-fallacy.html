@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Psychologist’s Fallacy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script src="navigation.js"></script>
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = 'psychologists-fallacy.html';
+            document.getElementById('previousLink').onclick = function () {
+                getPreviousPage(currentPage);
+            };
+            document.getElementById('nextLink').onclick = function () {
+                getNextPage(currentPage);
+            };
+        });
+    </script>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Psychologist’s Fallacy</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>The psychologist’s fallacy occurs when someone assumes that their own personal perspective or experience is objective and universally valid. This fallacy shifts the focus from understanding different perspectives to imposing one's own viewpoint on others.</p>
+                    <p>For example, "If I find this situation stressful, then everyone must find it stressful" is an example of the psychologist’s fallacy because it assumes that personal experiences are universally shared.</p>
+                    <p>Critical thinking involves evaluating arguments based on evidence and logical reasoning, rather than relying on personal perspectives. By doing so, we can avoid the psychologist’s fallacy and maintain a focus on understanding different viewpoints.</p>
+                    <p>See also: <a href="false-consensus-effect.html">False Consensus Effect</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/psychologists-fallacy.jpg" alt="Psychologist’s Fallacy Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "If I find this marketing strategy effective, then everyone must find it effective."</p>
+                    <p><strong>Academic Example:</strong> "If I understand this concept easily, then everyone must understand it easily."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often use the psychologist’s fallacy to justify their actions."</p>
+                    <p><strong>Intimate Partner Example:</strong> "If I feel hurt by this comment, then you must feel hurt by similar comments."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+tee begging-the-question.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Begging the Question (Circular Reasoning)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .content {
+            display: flex;
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .ads {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .category-art-container {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .unique-art-container {
+            text-align: right;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        function getRandomPage() {
+            const pages = [
+                'ad-hominem.html', 'bandwagon-fallacy.html', 'fallacists-fallacy.html',
+                'nocebo-effect-fallacy.html', 'gamblers-fallacy.html', 'moralistic-fallacy.html',
+                'naturalistic-fallacy.html', 'red-herring.html', 'weak-analogy.html',
+                'hot-hand-fallacy.html', 'false-compromise.html', 'loaded-question.html',
+                'moving-the-goalposts.html', 'cherry-picking.html', 'correlation-vs-causation.html',
+                'quoting-out-of-context.html', 'argument-from-authority.html', 'god-of-the-gaps.html',
+                'argument-from-incredulity.html', 'wishful-thinking.html'
+            ];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        }
+
+        function getPreviousPage() {
+            window.location.href = 'affirming-the-consequent.html';
+        }
+
+        function getNextPage() {
+            window.location.href = 'false-dilemma.html';
+        }
+    </script>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Logical Fallacies</strong></li>
+        </ul>
+    </nav>
+    <div class="content container">
+        <div class="ads">
+            <p>Advertisement</p>
+        </div>
+        <div class="main-content">
+            <div class="category-art-container">
+                <img src="art/category-art.jpg" alt="Category Art" id="categoryArtImage" style="width:2cm;"/>
+            </div>
+            <main>
+                <section>
+                    <hgroup>
+                        <h2>Begging the Question (Circular Reasoning)</h2>
+                        <h3>A logical fallacy</h3>
+                    </hgroup>
+                    <p>Begging the question, also known as circular reasoning, occurs when an argument's premise assumes the truth of the conclusion, instead of supporting it. This fallacy shifts the focus from valid reasoning to assuming what one is trying to prove.</p>
+                    <p>For example, "We must trust the news because it's trustworthy" is an example of begging the question because it assumes the truth of its conclusion.</p>
+                    <p>Critical thinking involves evaluating arguments based on evidence and logical reasoning, rather than assuming the conclusion. By doing so, we can avoid the begging the question fallacy and maintain a focus on the issues at hand.</p>
+                    <p>See also: <a href="false-dilemma.html">False Dilemma</a></p>
+                    <div class="unique-art-container">
+                        <img src="art/begging-the-question.jpg" alt="Begging the Question Art" id="uniqueArtImage" style="width:2cm;"/>
+                    </div>
+                    <h3>Examples</h3>
+                    <p><strong>Business Example:</strong> "Our product is the best because it is superior to all others."</p>
+                    <p><strong>Academic Example:</strong> "The theory is valid because it is based on sound principles."</p>
+                    <p><strong>Pop-Culture Example:</strong> "In TV shows, characters often use circular reasoning to persuade others."</p>
+                    <p><strong>Intimate Partner Example:</strong> "You should trust me because I am trustworthy."</p>
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                
+                    <div class="nav-links">
+
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                    </div>
+                                        <a href="index.html">Home</a>
+                        <a href="#" onclick="getRandomPage()">Random</a>
+                        <a href="#" id="previousLink">Previous</a>
+                        <a href="#" id="nextLink">Next</a>
+                                                </section>
+            </main>
+        </div>
+        <div id="sidebar-container" class="sidebar"></div>
+    </div>
+
+
+
+
+    <footer id="footer-container"></footer>
+    <script src="loadSidebar.js"></script>
+    <script src="loadHeaderFooter.js"></script>
+</body>
+</html>
